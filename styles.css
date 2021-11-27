@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&family=Prata&display=swap");
+:root {
+  --ff-primary: "Inter", sans-serif;
+  --ff-secondary: "Prata", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  font-family: var(--ff-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  margin-left: auto;
+  padding: 15px 20px;
+  font-family: var(--ff-secondary);
+  background: yellow;
+}
+button:hover {
+  background: #ffff66;
+  transform: scale(1.05);
+}
+
+.container {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+nav a {
+  font-family: var(--ff-secondary);
+}
+nav ul {
+  margin-left: auto;
+  display: inherit;
+}
+nav ul li {
+  color: gray;
+  cursor: pointer;
+}
+nav ul li:not(:last-of-type) {
+  margin-right: 30px;
+}
+nav ul li:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+.hero {
+  height: 50vh;
+}
+.hero h1 {
+  font-size: 55px;
+  font-family: var(--ff-secondary);
+  font-weight: 100;
+  margin: 120px auto 20px;
+}
+.hero p {
+  color: gray;
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+.hero .brands {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=styles.css.map */
