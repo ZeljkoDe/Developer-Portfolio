@@ -17,9 +17,33 @@ body {
   font-family: var(--ff-primary);
 }
 
+h1,
+h2 {
+  font-family: var(--ff-secondary);
+
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 100;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+p {
+  line-height: 1.5;
+}
+
+p,
+li {
+  color: #797b83;
+}
+
+.img {
+  width: 100%;
 }
 
 ul {
@@ -40,7 +64,7 @@ button {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -59,7 +83,6 @@ nav {
     display: inherit;
 
     li {
-      color: gray;
       cursor: pointer;
 
       &:not(:last-of-type) {
@@ -75,17 +98,16 @@ nav {
 }
 
 .hero {
+  @extend .container;
   height: 50vh;
 
   h1 {
-    font-size: 55px;
-    font-family: var(--ff-secondary);
+    font-size: 50px;
     font-weight: 100;
     margin: 120px auto 20px;
   }
 
   p {
-    color: gray;
     font-size: 18px;
     margin-bottom: 100px;
   }
@@ -93,5 +115,39 @@ nav {
   .brands {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.projects,
+.about__wrapper {
+  @extend .container;
+  display: flex;
+  justify-content: space-between;
+
+  &>* {
+    flex: 0 0 calc(50% - 30px);
+  }
+}
+
+.projects {
+  margin: 100px auto;
+
+  h2 {
+    font-weight: 300;
+    margin: 10px 0;
+
+    &::after {
+      content: '→';
+      padding-left: 10px;
+    }
+  }
+}
+
+.about {
+  background: #2f2f37;
+  padding: 100px 0;
+
+  p {
+    padding: 10px 0;
   }
 }
