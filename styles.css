@@ -30,6 +30,7 @@ h2 {
 a {
   text-decoration: none;
   color: inherit;
+  font-family: var(--ff-secondary);
 }
 
 p {
@@ -61,8 +62,12 @@ button:hover {
   transform: scale(1.05);
 }
 
-.container, .projects,
-.about__wrapper, .hero {
+nav,
+.hero,
+.projects,
+.about__wrapper,
+.contact,
+.footer__wrapper {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
@@ -72,9 +77,6 @@ nav {
   padding-top: 20px;
   display: flex;
   align-items: center;
-}
-nav a {
-  font-family: var(--ff-secondary);
 }
 nav ul {
   margin-left: auto;
@@ -119,7 +121,7 @@ nav ul li:hover {
 }
 
 .projects {
-  margin: 100px auto;
+  margin: 80px auto;
 }
 .projects h2 {
   font-weight: 300;
@@ -132,10 +134,31 @@ nav ul li:hover {
 
 .about {
   background: #2f2f37;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 .about p {
   padding: 10px 0;
+}
+
+.contact {
+  margin: 80px auto;
+}
+.contact p {
+  width: 45%;
+  margin: 15px 0;
+}
+
+footer {
+  background: #2f2f37;
+  padding: 20px 0;
+}
+footer .footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer__wrapper .social > *:not(:last-of-type) {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
